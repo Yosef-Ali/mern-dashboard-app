@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 import Sidebar from "@/components/Sidebar";
 import { useGetUserQuery } from "../../states/api";
-import Navbar from "../../components/Navbar";
+import Navbar from "@/components/Navbar";
 
 const Layout = () => {
   const isNonMobile = useMediaQuery("(min-width: 600px)");
