@@ -25,7 +25,7 @@ import {
 } from "@mui/material";
 import { setMode } from "../states";
 
-const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
+const TopNavbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
   const dispatch = useDispatch();
   const theme = useTheme();
 
@@ -128,4 +128,4 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
   );
 };
 
-export default Navbar;
+export default TopNavbar;

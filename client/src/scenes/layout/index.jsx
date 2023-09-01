@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 import Sidebar from "@/components/Sidebar";
 import { useGetUserQuery } from "../../states/api";
-import Navbar from "@/components/Navbar";
+import TopNavbar from "../../components/TopNavbar";
 
 const Layout = () => {
   const isNonMobile = useMediaQuery("(min-width: 600px)");
@@ -24,7 +24,7 @@ const Layout = () => {
         setIsSidebarOpen={setIsSidebarOpen}
       />
       <Box flexGrow={1}>
-        <Navbar
+        <TopNavbar
           user={data || {}}
           isSidebarOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
